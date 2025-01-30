@@ -45,8 +45,23 @@ function sortearAmigo() {
 
     // Atualiza o conteúdo da lista de resultados para exibir o nome do amigo sorteado
     let resultado = document.getElementById('resultado');
-    resultado.innerHTML = `O amigo sorteado é: <strong>${amigoSorteado}</strong>`;
+    resultado.innerHTML = `O amigo sorteado é: ${amigoSorteado}`;
 }
 
+function limparLista() {
+    // Limpar o array de amigos
+    amigos = [];
+    
+    // Limpar o conteúdo da lista de amigos no HTML
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = '';
+
+    // Limpar o conteúdo do resultado
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = '';
+    
+    // Opcional: Mensagem de confirmação (para feedback ao usuário)
+    alert("Lista limpa com sucesso!");
+}
 
 
